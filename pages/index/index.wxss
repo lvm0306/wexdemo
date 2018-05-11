@@ -1,0 +1,68 @@
+.swiper-tab {
+  width: 100%;
+  border-bottom: 2rpx solid gainsboro;
+  text-align: center;
+  line-height:80rpx;
+  display:flex;
+  background-color: #00BFFF	 
+}
+
+.swiper-tab-list {
+  font-size: 30rpx;
+  display: inline-block;
+  width: 20%;
+  color: #fff;
+}
+.on {
+  color: #fff;
+  border-bottom: 5rpx solid #fff;
+}
+
+.place_time{
+  display: flex;
+  margin-top: 40rpx;
+  flex-direction: row;
+  color: #c0c0c0;
+  font-size: 30rpx;
+}
+.place{
+  /* margin-right: 50rpx; */
+}
+.space{
+  /* width: 40rpx; */
+}
+.time{
+  /* margin-right: 100rpx; */
+  
+}
+.title{
+  font-size: 35rpx;
+}
+.list{
+  display: flex;
+  flex-direction: row;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+.img{
+  width: 230rpx;
+  height: 180rpx;
+}
+.contentlist{
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  height: 250rpx;
+  display: flex;
+  flex-direction:  column;
+}
+.text{
+  width: 500rpx;
+  height: 200rpxrpx;
+  margin-right: 30rpx;
+}
+.line{
+  margin-top: 10rpx;
+  width: 750rpx;
+  height: 2rpx;
+  border-bottom:1rpx solid #e5e5e5;
+}

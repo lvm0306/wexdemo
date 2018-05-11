@@ -1,0 +1,28 @@
+<view>
+  <view class="swiper-tab">
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">国内</view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">国际</view>
+    <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">财经</view>
+    <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">娱乐</view>
+    <view class="swiper-tab-list {{currentTab==4 ? 'on' : ''}}" data-current="4" bindtap="swichNav">军事</view>
+    <view class="swiper-tab-list {{currentTab==5 ? 'on' : ''}}" data-current="5" bindtap="swichNav">体育</view>
+    <view class="swiper-tab-list {{currentTab==6 ? 'on' : ''}}" data-current="6" bindtap="swichNav">其他</view>
+  </view>
+  <view>
+    <view class='contentlist' wx:for="{{listdata}}" wx:for-index="key">
+      <view class='list' bindtap='listtap' id="{{item.id}}">
+        <view class='text'>
+          <view class='title'>{{item.title}}</view>
+          <view class='place_time'>
+            <view class='place'>{{item.source}}</view>
+            <view class='space'></view>
+            <view class='time'>{{item.date}}</view>
+          </view>
+        </view>
+        <image class='img' src='{{item.firstImage}}'></image>
+      </view>
+      <view class='line'></view>
+    </view>
+
+  </view>
+</view>
